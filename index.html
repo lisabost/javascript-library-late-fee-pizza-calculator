@@ -3,13 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Late Fee and Pizza Price Calculator</title>
-    <script src="code.js"></script>
+    <link rel="stylesheet" href="library-pizza-calculator.css">
 </head>
 <body>
-    <h1>Library Late Fee Calculator</h1>
-    <button onclick="calculateLateFee()">Calculate my Late Fee</button>
+<h1>Library Late Fee Calculator</h1>
+<fieldset>
+    <legend>Library Late Fee Calculator</legend>
 
-    <h1>Pizza Price Calculator</h1>
-    <button onclick="calculatePizzaPrice()">Calculate the Price of the Pizza</button>
+    <label for="lateBooks">Number of Late Books:</label>
+    <input type="number" name="lateBooks" id="lateBooks">
+    <br/>
+
+    <label for="lateDVD">Number of Late DVDs:</label>
+    <input type="number" name="lateDVD" id="lateDVD">
+    <br/>
+
+    <label for="numDaysLate">Number of Days Late: </label>
+    <input type="number" name="numDaysLate" id="numDaysLate">
+    <br/>
+
+    <button id="fineButton">Calculate Library Late Fees</button>
+
+    <!-- output -->
+    <p class="output">
+        You owe $<span id="bookLateFee"></span> in late fees for books.
+    </p>
+    <p class="output">
+        You owe $<span id="DvdLateFee"></span> in late fees for DVDs.
+    </p>
+    <p class="output">
+        You owe $<span id="totalLateFee"></span> total in late fees.
+    </p>
+
+</fieldset>
+
+
+<h1>Pizza Price Calculator</h1>
+<fieldset>
+    <legend>Pizza Price Calculator</legend>
+    <label for="toppings">Number of Toppings Added:</label>
+    <input type="number" name="toppings" id="toppings">
+    <br/>
+
+    <label for="peopleToShare">Number of People Sharing Pizza: </label>
+    <input type="number" name="coworkers" id="peopleToShare">
+    <br/>
+
+    <button id="pizzaButton">Calculate Pizza Price and Price Per Person</button>
+
+    <!--Output-->
+    <p class="pizzaOutput">
+        The cost of your pizza is $<span id="totalPizzaPrice"></span>.
+    </p>
+    <p class="pizzaOutput">
+        The pizza costs $<span id="pricePerPerson"></span> per person.
+    </p>
+</fieldset>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="code.js"></script>
+
 </body>
 </html>

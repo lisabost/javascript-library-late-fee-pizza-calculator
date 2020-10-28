@@ -1,0 +1,29 @@
+.output {
+    display: none;
+}
+
+.pizzaOutput {
+    display: none;
+}
+
+fieldset legend {
+    font-family: Arial;
+    font-size: large;
+    color: blue;
+}
+label, input {
+    margin-top: 10px;
+}
+label { float: left;
+    display: block;
+    width: 250px;
+    text-align: right;
+    padding-right: 1em;
+}
+input { display: block;
+    margin-bottom: 2em;
+}
+
+button {
+    margin-left: 250px;
+}
